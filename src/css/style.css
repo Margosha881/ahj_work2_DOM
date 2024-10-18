@@ -1,36 +1,37 @@
-.grid-container {
-  display: grid;
-  justify-content: center;
-  margin-top: 20px;
+* {
+	box-sizing: border-box;
 }
 
-.grid-row {
-  margin-bottom: 10px;
+body {
+	background-color:rgb(73, 67, 67);
 }
 
-.grid-row:last-child {
-  margin-bottom: 0;
+.title {
+ 	text-align: center;
+	font-size: 2em;
+	color: #fff;
 }
 
-.grid-row:after {
-  content: "";
-  display: block;
-  clear: both;
+.field {
+	display: flex;
+	flex-wrap: wrap;
+	width: 70vmin;
+	height: 70vmin;
+	border: 1px solid black;
+	margin: auto;
+	background-color: rgb(194, 201, 162);
 }
 
-.grid-cell {
-  width: 150px;
-  height: 150px;
-  margin-right: 10px;
-  float: left;
-  border-radius: 3px;
-  background: #8687ad;
+.cell {
+	width: 25%;
+	height: 25%;
+	box-sizing: border-box;
+	border: 2px solid black;
 }
 
-.grid-cell:last-child {
-  margin-right: 0;
-}
-
-img {
-  padding: 15px 15px;
+.goblin {
+	background-image: url('../img/goblin.png');
+  	background-repeat: no-repeat;
+  	background-size: contain;
+  	background-position: center;
 }

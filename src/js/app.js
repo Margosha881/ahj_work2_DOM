@@ -1,4 +1,6 @@
-import Character from "./init";
+import Field from "./Field";
+import GamePlay from "./GamePlay";
 
-const Game = new Character(document.querySelector(".grid-container"));
-Game.getRandomPosition();
+const fields = new Field();
+const gameplay = new GamePlay(fields);
+gameplay.init();
